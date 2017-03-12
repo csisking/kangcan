@@ -1,0 +1,117 @@
+
+.m-solution{
+  .m-solution-nav{
+    width: 1010px;
+    margin: auto;
+    li{
+      float: left;
+      width: 493px;
+      margin-bottom: 20px;
+      &:nth-child(even){
+         margin-left: 20px;
+      }
+    }
+
+    .n-solution-cell{
+      position: relative;
+      width:499px;
+      height: 300px;
+      .u-cover{
+        
+      }
+      
+      // .u-no-active{
+      //   width:499px;
+      //   height: 300px;
+      //   position: absolute;
+      //   bottom: 0px;
+      //   left: 0px;
+      //   background: rgba(0, 0, 0, 0.4);
+      // }
+    }
+    .u-active{
+      width:499px;
+      height: 300px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .u-cell-active{
+      .u-active{
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        bottom: 0px;
+        left: 245px;
+
+        width: 0;
+        height: 0;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        border-left: 10px solid transparent;
+      }
+    }
+
+  }
+  .u-content-active{
+    display: block;
+  }
+  .u-content-no-active{
+    display: none;
+  }
+  .m-choose{
+    width: 1010px;
+    margin: auto;
+    border-bottom: 1px solid #929496;
+    li{
+      float: left;
+      width: 335px;
+    }
+    a{
+      display: block;
+      &:hover{
+        height: 125px;
+        border-bottom: 1px solid #000;
+      }
+    }
+    .n-choose-cell{
+      height: 126px;
+      padding-bottom: 20px;
+      .u-title{
+        text-align: center;
+      }
+      .u-choose{
+        margin: 50px auto 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        border: 1px solid #70757b;
+      }
+    }
+  }
+
+  .m-introduction{
+    width: 1010px;
+    margin: auto;
+    font-size: 14px;
+    .u-content{
+      margin-top: 20px;
+      p{
+        text-indent: 26px;
+      }
+    }
+    .title{
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .content{
+      margin-top: 10px;
+    }
+    .pic{
+      margin-top: 40px;
+    }
+  }
+
+}
+
