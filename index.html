@@ -27,6 +27,8 @@
                 <li><a href="./solution.html">解决方案</a></li>
                 <li><a href="./case.html">企业案例</a></li>
                 <li><a href="./service.html">服务流程</a></li>
+
+                <li><a href="./service.html">联系我们&nbsp|&nbsp商务合作：18768133873 &nbsp&nbsp 18958095693</a></li>
             </ul>
         </div>
     </div>
@@ -77,7 +79,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="u-more">公司发展历程</div>
+                <div class="u-more">
+                    <span>公司发展历程</span>
+                    <span class="arrow"></span>
+                </div>
             </div>
             <!--技术说明-->
             <div class="n-technical-note f-cb">
@@ -167,18 +172,41 @@
             <div class="n-copyright">Copyright&nbsp;&copy;2017&nbsp;杭州康灿环境工程有限公司版权所有</div>
         </div>
     </div>
-    <div class="returnTop">
-        <div class="container">
-            <div class="contact_top" style="display:none;" id="contact_top">
-                <div id="top"></div>
-            </div>
+    <div class="m-returnTop .">
+        <div class="u-container">
+            <ul>
+                <li  class="u-li-qq">
+                    <span class="u-qq"></span>
+                </li>
+                <li  class="u-li-phone">
+                    <span class="u-phone"></span>
+                </li>
+                <li>
+                    <span class="u-top"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="u-content f-dn">
+            <div>电话咨询:0571-89852226</div>
+            <div class="u-arrow-icon"></div>
         </div>
     </div>
 
-    <div id="mask"></div>
 </body>
-    <!-- <script src="./js/cnej/define.js?pro=./res/javascripts/pro/"></script> -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-3.3.1.min.js"></script>
     <script src="./js/index.js"></script>
+    <script type="text/javascript">
+        $(".m-returnTop .u-phone").hover(function() {
+            $(".u-li-phone").addClass("u-active");
+            $(".m-returnTop .u-content").show();
+        });
+        $(".m-returnTop .u-phone").mouseleave(function() {
+            $(".u-li-phone").removeClass("u-active");
+            $(".m-returnTop .u-content").hide();
+        });
+        $(".m-returnTop .u-top").click(function() {
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+    </script>
 </html>

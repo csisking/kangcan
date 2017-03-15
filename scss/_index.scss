@@ -49,6 +49,14 @@
       line-height: 46px;
       text-align: center;
       color: #287bbb;
+      span{
+        display: inline-block;
+      }
+      .arrow{
+        width: 7px;
+        height: 12px;
+        background: url(../res/img/index-arrow.png) no-repeat center;
+      }
     }
   }
   .n-technical-note{
@@ -124,6 +132,14 @@
       line-height: 46px;
       text-align: center;
       color: #287bbb;
+      span{
+        display: inline-block;
+      }
+      .arrow{
+        width: 7px;
+        height: 12px;
+        background: url(../res/img/index-arrow.png) no-repeat center;
+      }
     }
   }
   .n-honour{
