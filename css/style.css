@@ -773,7 +773,7 @@ body .n-head .n-head-wrap ul li {
   float: left;
   display: block;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 18px;
 }
 body .n-head .n-head-wrap ul li a {
   height: 100%;
@@ -1009,6 +1009,7 @@ body .m-returnTop .u-content .u-arrow-icon {
   border-bottom: 1px solid red;
 }
 .m-home .n-overall .u-more {
+  display: block;
   margin: auto;
   width: 164px;
   height: 46px;
@@ -1089,6 +1090,7 @@ body .m-returnTop .u-content .u-arrow-icon {
   color: #db1a12;
 }
 .m-home .n-solution .u-more {
+  display: block;
   margin: auto;
   width: 164px;
   height: 46px;
