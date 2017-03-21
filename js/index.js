@@ -9,3 +9,12 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     spaceBetween: 30,
 });
+
+
+$("#j-menu-technical").hover(function(){
+	$("#j-technical-hover").show();
+});
+
+$("#j-menu-technical").mouseleave(function() {
+    $("#j-technical-hover").hide();
+});

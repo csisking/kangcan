@@ -786,6 +786,43 @@ body .n-head .n-head-wrap ul li a {
 body .n-head .n-head-wrap ul li a:hover {
   color: #e5e5e5;
 }
+body .n-head .n-head-wrap ul li span {
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+}
+body .n-head .n-head-wrap ul .u-technical {
+  position: relative;
+}
+body .n-head .n-head-wrap ul .u-technical-hover {
+  position: absolute;
+  top: 91px;
+  left: -10px;
+  width: 160px;
+  height: 90px;
+  background: #ebeceb;
+  color: #112331;
+  text-align: center;
+}
+body .n-head .n-head-wrap ul .u-technical-arrow-icon {
+  position: absolute;
+  top: -5px;
+  left: 70px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid #ebeceb;
+  border-right: 6px solid transparent;
+}
+body .n-head .n-head-wrap ul .u-hover1, body .n-head .n-head-wrap ul .u-hover2 {
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+}
+body .n-head .n-head-wrap ul .u-hover1 {
+  border-bottom: 1px solid #cacbcb;
+}
 body .n-banner {
   margin-top: 85px;
 }
@@ -801,14 +838,31 @@ body .index-theme .n-logo-img {
 body .index-theme ul li a {
   color: #fff;
 }
+body .index-theme ul li a .icon {
+  width: 13px;
+  height: 7px;
+  margin-top: 61px;
+  margin-left: 5px;
+  background: url(../res/img/layout-index-arrow-down.png) no-repeat center;
+}
 body .index-theme ul li a:hover, body .index-theme ul li a:active {
   height: 128px;
   color: #e5e5e5;
   border-bottom: 2px solid #fff;
 }
+body .index-theme ul li a:hover .icon, body .index-theme ul li a:active .icon {
+  width: 13px;
+  height: 7px;
+  margin-top: 61px;
+  margin-left: 5px;
+  background: url(../res/img/layout-index-arrow-up.png) no-repeat center;
+}
 body .index-theme ul li a.u-active {
   color: #287bbb;
   border-bottom: 2px solid #fff;
+}
+body .index-theme ul .u-contact {
+  line-height: 130px;
 }
 body .noIndex-theme {
   background-color: #ffffff !important;
@@ -847,9 +901,19 @@ body .noIndex-theme .n-head-wrap ul li a:hover, body .noIndex-theme .n-head-wrap
   color: #287bbb;
   border-bottom: 2px solid #287bbb;
 }
+body .noIndex-theme .n-head-wrap ul li a:hover .icon, body .noIndex-theme .n-head-wrap ul li a:active .icon {
+  background: url(../res/img/layout-arrow-up.png) no-repeat center;
+}
 body .noIndex-theme .n-head-wrap ul li a.u-active {
   color: #287bbb;
   border-bottom: 2px solid #287bbb;
+}
+body .noIndex-theme .n-head-wrap ul li a .icon {
+  width: 13px;
+  height: 7px;
+  margin-top: 38px;
+  margin-left: 5px;
+  background: url(../res/img/layout-arrow-down.png) no-repeat center;
 }
 body .n-body {
   height: 100%;
