@@ -306,6 +306,7 @@
             var attribute = $(this).attr("attr") ;
             caseCompanyList = caseObject[attribute];
             buildNode(caseCompanyList);
+            $("#j-current")[0].innerHTML = $(this)[0].innerHTML;
         });
 
         $(".m-nav .n-nav").hover(function () {

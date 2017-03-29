@@ -1392,7 +1392,7 @@ body .m-returnTop .u-content .u-arrow-icon {
   border-left: 10px solid transparent;
 }
 .m-solution .u-content-active {
-  display: block;
+  display: block !important;
 }
 .m-solution .u-content-no-active {
   display: none;
