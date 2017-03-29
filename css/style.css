@@ -1226,6 +1226,10 @@ body .m-returnTop .u-content .u-arrow-icon {
   margin: 0 10px;
   font-size: 13px;
 }
+.m-home .n-honour img {
+  width: 100%;
+  height: 100%;
+}
 .m-home .n-partner .u-title {
   margin: 50px auto 20px;
   width: 100px;

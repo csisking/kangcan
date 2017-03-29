@@ -145,10 +145,31 @@
                 <div class="u-line"></div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./res/honor/变频驱动装置专利.jpg"></div>
-                        <div class="swiper-slide"><img src="./res/honor/地方级人才.jpg"></div>
-                        <div class="swiper-slide"><img src="./res/honor/发明协会银奖.jpg"></div>
-                        <div class="swiper-slide"><img src="./res/honor/国务院津贴.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/1.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/2.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/3.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/4.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/5.jpg"></div>
+
+                        <div class="swiper-slide"><img src="./res/honor/6.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/7.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/8.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/9.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/10.jpg"></div>
+
+                        <div class="swiper-slide"><img src="./res/honor/11.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/12.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/13.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/14.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/15.jpg"></div>
+
+                        <div class="swiper-slide"><img src="./res/honor/16.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/17.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/18.jpg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/19.jpeg"></div>
+                        <div class="swiper-slide"><img src="./res/honor/20.jpeg"></div>
+                        <!-- <div class="swiper-slide"><div class="slider1"></div></div>
+                         -->
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -207,7 +228,7 @@
 </body>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-3.3.1.min.js"></script>
-    <script src="./js/index.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
     <script src="./js/menu.js"></script>
     <script type="text/javascript">
         $(".m-returnTop .u-phone").hover(function() {
@@ -220,6 +241,15 @@
         });
         $(".m-returnTop .u-top").click(function() {
             $('html, body').animate({scrollTop:0}, 'slow');
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 5,
+            paginationClickable: true,
+            spaceBetween: 30,
+            nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
         });
     </script>
 </html>
