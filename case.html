@@ -22,7 +22,7 @@
                 <a class="n-logo-img" href="./index.html"></a>
             </div>
             <ul>
-                <li><a href="./index.html">公司介绍</a></li>
+                <li><a href="./index.html">首页</a></li>
                 <li id="j-menu-technical" class="u-technical"><a href="./technical.html">
                     <span class="f-fl">技术说明</span>
                     <span class="f-fl icon"></span></a>
@@ -57,7 +57,8 @@
                     <span class="word">合作单位</span>
                     <span class="arrow"></span>
                 </div>
-
+                
+                <div class="u-case-arrow-icon"></div>
                 <div class="n-nav-list f-dn">
                     <ul>
                         <li attr="qb">全部</li>
@@ -66,7 +67,6 @@
                         <li attr="jd">酒店&写字楼</li>
                         <li attr="gg">公共机构</li>
                         <li attr="gw">购物中心</li>
-                        <li attr="qt">其他</li>
                     </ul>
                 </div>
 
@@ -316,9 +316,13 @@
         $(".m-nav li").click(function () {
             $(".m-company ul").empty();
             var attribute = $(this).attr("attr") ;
-            caseCompanyList = caseObject[attribute];
-            buildNode(caseCompanyList);
-            $("#j-current")[0].innerHTML = $(this)[0].innerHTML;
+            if(attribute == 'qb'){
+                init();
+            }else{
+                caseCompanyList = caseObject[attribute];
+                buildNode(caseCompanyList);
+                $("#j-current")[0].innerHTML = $(this)[0].innerHTML;
+            }
         });
 
         $(".m-nav .n-nav").hover(function () {
@@ -326,7 +330,7 @@
         });
 
         $(".n-nav-list").mouseleave(function () {
-            $(".n-nav-list").hide();
+            //$(".n-nav-list").hide();
         });
 
         $(".n-nav-list li").mouseenter(function () {

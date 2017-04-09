@@ -30,21 +30,40 @@
         background: url(../res/img/case-arrow.png) no-repeat center;
       }
     }
+    .u-case-arrow-icon{
+      position: absolute;
+      top: 38px;
+      left: 12px;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-bottom: 6px solid #fff;
+      border-right: 6px solid transparent;
+    }
     .n-nav-list{
       position: absolute;
-      width: 150px;
-      height: 390px;
-      background: #f7f7f7;
-      border: solid 1px #9f9f9f;
+      width: 158px;
+      height: 307px;
+      background: #fff;
+      //border: solid 1px #9f9f9f;
       top: 45px;
       left: 5px;
       text-align: center;
+      -moz-box-shadow: 2px 2px 5px #9f9f9f;
+      -webkit-box-shadow: 2px 2px 5px #9f9f9f;
+      box-shadow: 2px 2px 5px #9f9f9f;
       li:not(:last-child) {
-        border-bottom: solid 1px #9f9f9f;
+        border-bottom: solid 1px #f8f8f8;
         cursor: pointer;
       }
       .u-current{
-        background: #fefefe;
+        //background: #fefefe;
+      }
+      li{
+        height: 50px;
+        margin-left: 12px;
+        margin-right: 12px;
+        text-align: left;
       }
     }
     .n-current{
@@ -90,12 +109,14 @@
       .u-des{
         margin-top: 15px;
         color: #959895;
+        min-height: 96px;
       }
       .u-project{
         margin-top: 20px;
         font-size: 16px;
       }
     }
+    
   }
 
 }
