@@ -23,9 +23,11 @@
             </div>
             <ul>
                 <li><a href="./index.html">首页</a></li>
-                <li id="j-menu-technical" class="u-technical"><a href="./technical.html">
-                    <span class="f-fl">技术说明</span>
-                    <span class="f-fl icon"></span></a>
+                <li class="u-technical">
+                    <a id="j-menu-technical" href="./technical.html">
+                        <span class="f-fl">技术说明</span>
+                        <span class="f-fl icon"></span>
+                    </a>
                     <div id="j-technical-hover" class="u-technical-hover f-dn">
                         <div class="u-technical-arrow-icon"></div>
                         <div class="u-hover1">
@@ -39,6 +41,7 @@
                 <li><a href="./solution.html">解决方案</a></li>
                 <li><a href="./case.html">企业案例</a></li>
                 <li><a href="./service.html">服务流程</a></li>
+                <li class="u-contact"><span>商务合作：18768133873 &nbsp&nbsp 18958095693</span></li>
             </ul>
 
         </div>
@@ -58,7 +61,7 @@
                     <span class="arrow"></span>
                 </div>
                 
-                <div class="u-case-arrow-icon"></div>
+                <div class="u-case-arrow-icon f-dn"></div>
                 <div class="n-nav-list f-dn">
                     <ul>
                         <li attr="qb">全部</li>
@@ -185,7 +188,7 @@
                     "des":'改造效果：中央空调系统年节能量为251万千瓦时，综合节能率为23%（含空调主机），取得非常可观的经济效果，按0.7元/千瓦时，年节电费可达175万元以上。'
                 },
                 {
-                    "img":'./res/cover/惠州中建电讯.jpg',
+                    "img":'./res/cover/杭州五星铝业.jpg',
                     "name":'杭州五星铝业有限公司',
                     "project":'改造项目：工业水循环智控变频改造',
                     "des":'改造效果：五星铝业二区水循环系统共计4台冷却循环泵，改造后减少水泵机械磨损延长寿命，智控管理系统远程可控，提升自动化水平，同时运行节电率30%以上，年节电费用可达50万元以上，取得可观的经济效益。'
@@ -317,6 +320,7 @@
             $(".m-company ul").empty();
             var attribute = $(this).attr("attr") ;
             if(attribute == 'qb'){
+                $("#j-current")[0].innerHTML = '全部';
                 init();
             }else{
                 caseCompanyList = caseObject[attribute];
@@ -327,10 +331,12 @@
 
         $(".m-nav .n-nav").hover(function () {
             $(".n-nav-list").show();
+            $(".u-case-arrow-icon").show();
         });
 
         $(".n-nav-list").mouseleave(function () {
-            //$(".n-nav-list").hide();
+            $(".n-nav-list").hide();
+            $(".u-case-arrow-icon").hide();
         });
 
         $(".n-nav-list li").mouseenter(function () {

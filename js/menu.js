@@ -1,4 +1,4 @@
-$(".n-head-wrap li").hover(function(){
+$(".n-head-wrap li a").hover(function(){
 	$("#j-technical-hover").hide();
 });
 
@@ -19,5 +19,6 @@ $(".u-hover2").click(function() {
 });
 
 $("#j-technical-hover").mouseleave(function() {
-	$(this).hide();
+	$("#j-technical-hover").hide();
+	//$(this).hide();
 });

@@ -21,7 +21,7 @@ body{
     .n-head-wrap{
       position: relative;
       width: $width;
-      height: 130px;
+      height: 85px;
       margin: 0 auto;
       text-align: left;
       font-size: 0;
@@ -31,7 +31,7 @@ body{
         //display: inline-block;
         width: 319px;
         height: 54px;
-        margin-top: 25px;
+        margin-top: 4px;
         box-sizing: border-box;
       }
       .n-logo-img{
@@ -54,8 +54,8 @@ body{
             height: 100%;
             vertical-align: middle;
             text-align: center;
-            height: 130px;
-            line-height: 130px;
+            height: 85px;
+            line-height: 85px;
             display: block;
               &:hover{
               color: #e5e5e5;
@@ -119,7 +119,7 @@ body{
     }
   }
   n-banner-index{
-    margin-top: 130px;
+    margin-top: 85px;
   }
   .index-theme{
     .n-logo-img{
@@ -132,18 +132,18 @@ body{
           .icon{
             width: 13px;
             height: 7px;
-            margin-top: 61px;
+            margin-top: 40px;
             margin-left: 5px;
             background: url(../res/img/layout-index-arrow-down.png) no-repeat center;
           }
           &:hover,&:active{
-            height: 128px;
+            height: 83px;
             color:#e5e5e5;
             border-bottom: 2px solid #fff;
             .icon{
               width: 13px;
               height: 7px;
-              margin-top: 61px;
+              margin-top: 40px;
               margin-left: 5px;
               background: url(../res/img/layout-index-arrow-up.png) no-repeat center;
             }
@@ -155,7 +155,18 @@ body{
         }
       }
       .u-contact{
-        line-height: 130px;
+        line-height: 20px;
+        margin-top: 28px;
+        span{
+            height: 20px!important;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 4px;
+        }
+      }
+      .u-split{
+        line-height: 85px;
+        padding: 0 2px!important;
       }
     }
   }
@@ -185,7 +196,7 @@ body{
       }
       ul{
         li{
-          padding: 0 28px;
+          // padding: 0 28px;
           a{
             height: 85px;
             line-height: 85px;
@@ -211,6 +222,23 @@ body{
             }
           }
         }
+
+        .u-contact{
+          line-height: 20px;
+          margin-top: 28px;
+          color: #112331;
+          span{
+              height: 20px!important;
+              border: 1px solid #b7bdc1;
+              border-radius: 3px;
+              padding: 4px;
+          }
+        }
+        .u-split{
+          line-height: 85px;
+          padding: 0 2px!important;
+        }
+
       }
     }
   }
@@ -304,6 +332,13 @@ body{
           width: 22px;
           height: 26px;
           background: url(../res/img/layout-qq.png) no-repeat center;
+        }
+        .u-mail{
+          margin-top: 8px;
+          margin-left: 12px;
+          width: 22px;
+          height: 26px;
+          background: url(../res/img/layout-mail.png) no-repeat center;
         }
         .u-phone{
           margin-top: 9px;
